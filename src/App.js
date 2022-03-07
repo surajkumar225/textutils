@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React, { useState } from "react";
@@ -77,7 +77,7 @@ const removeBodyClasses= ()=>{
           heading=" Try TextUtils - Word Counter, Character Counter, Remove Extra Spaces"
           mode={mode}
            /> 
-          <About mode={mode} />
+          {/* <About mode={mode} /> */}
         </div>
       {/* </Router> */}
     </>

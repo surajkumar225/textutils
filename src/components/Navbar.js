@@ -13,41 +13,31 @@ export default function Navbar(props) {
     // </div>
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">{props.title}</a>
+    <a className="navbar-brand" href="/">{props.title}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="ocllapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
+          {/* <a className="nav-link active" aria-current="page" href="/">Home</a> */}
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
         <a className="nav-link" href="/">{props.aboutText}</a>
-        </li>
+        </li> */}
         
-        <div className="d-flex">
+        {/* <div className="d-flex">
           <div className="bg-primary rounded mx-2" onClick={()=> {props.toggleMode('primary')}} style={{height: '30px', width: '30px', cursor: 'pointer'}}></div>
           <div className="bg-success rounded mx-2" onClick={()=> {props.toggleMode('success')}} style={{height: '30px', width: '30px', cursor: 'pointer'}}></div>
           <div className="bg-danger rounded mx-2" onClick={()=> {props.toggleMode('danger')}} style={{height: '30px', width: '30px', cursor: 'pointer'}}></div>
           <div className="bg-warning rounded mx-2" onClick={()=> {props.toggleMode('warning')}} style={{height: '30px', width: '30px', cursor: 'pointer'}}></div>
-        </div>
+        </div> */}
 
         <div className="dropdown mx-3">
-  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-    Joy
-  </button>
-  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-    <li><a className="dropdown-item active" href="#">Gadha</a></li>
-    <li><a className="dropdown-item" href="#">Kukur</a></li>
-    <li><a className="dropdown-item" href="#">Suar</a></li>
-    <li><hr className="dropdown-divider"/></li>
-    <li><a className="dropdown-item" href="#">Bakri</a></li>
-  </ul>
 </div>
 
-
-
+ 
       </ul>
       {/* <form className="d-flex"> */}
         {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
